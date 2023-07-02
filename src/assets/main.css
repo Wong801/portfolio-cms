@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header {
+    @apply bg-slate-500 text-white sticky top-0 px-8 py-6 flex justify-end
+  }
+
+  .sidebar {
+    @apply bg-slate-400 text-white sticky top-0 left-0 z-10 min-h-screen
+  }
+
+  .sidebar__header {
+    @apply grid grid-rows-1 grid-cols-3 p-4 items-center bg-slate-500
+  }
+
+  .sidebar__container {
+    @apply h-auto border-2 border-slate-500
+  }
+
+  .sidebar--open {
+    @apply w-80
+  }
+
+  .sidebar--closed {
+    @apply w-20
+  }
+
+  .navbar {
+    @apply flex justify-around bg-black text-white sticky top-0
+  }
+
+  .navbar__content {
+    @apply flex
+  }
+
+  .footer {
+    @apply px-24 py-4 bg-gray-500 text-white flex justify-between
+  }
+
+  .footer__content {
+    @apply flex gap-x-4
+  }
+
+  .form {
+    @apply w-full
+  }
+
+  .form--login {
+    @apply w-max
+  }
+
+  form input,
+  form textarea {
+    @apply border rounded-md px-2 py-1 w-full
+  }
+
+  .form__content {
+    @apply my-2 py-4
+  }
+
+  .form__content--user {
+    @apply form__content grid grid-cols-2 gap-x-12 gap-y-8
+  }
+
+  .form__content {
+    @apply my-2 py-4
+  }
+
+  .button {
+    @apply border px-4 py-1.5 rounded-xl
+  }
+
+  .button-action {
+    @apply button bg-slate-500 text-white
+  }
+}
